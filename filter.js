@@ -9,11 +9,6 @@ function caller(){
 
 function filterList(){
   input = document.getElementById('mobile_search').value.toLowerCase();
-  if(input.length > 0){
-      ul.style.visibility="visible";
-  }else{
-      ul.style.visibility="hidden";
-  }
   for(i = 0; i<list.length;i++){
     a = list[i].getElementsByTagName('a')[0].innerHTML.toLowerCase();
     if(a.indexOf(input) > -1){
@@ -23,6 +18,14 @@ function filterList(){
       list[i].style.display = "none";
     }
   }
+}
+
+function showMenu(){
+  ul.style.visibility="visible";
+}
+
+function hideMenu(){
+  ul.style.visibility="hidden";
 }
 
 window.addEventListener("load", caller, false);
