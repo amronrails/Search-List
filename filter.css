@@ -1,0 +1,32 @@
+body{
+  font-size: 18px;
+  font-family: cairo;
+  direction: rtl;
+}
+#mobile_search{
+  margin-bottom: 0px;
+  width: 300px;
+  font-size: 18px;
+    padding: 5px;
+
+  font-family: cairo;
+}
+ul#mobiles{
+  visibility: hidden;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+
+  list-style: none;
+  max-height: 250px;
+  overflow: auto;
+}
+
+li.mobile_item{
+  padding: 5px;
+  border: 1px solid grey;
+  background-color: azure;
+}
+li.mobile_item:hover{
+  background-color: darkgray;
+}
